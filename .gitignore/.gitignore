@@ -1,0 +1,48 @@
+echo '\n begin to install 01 plugin \n';
+git init;
+echo '\n yum finish install 01 plugin \n';
+sleep 3;
+echo '\n begin to install 02 plugin \n';
+git remote add origin https://github.com/XiaohuaCN/Cloud-Radar-Plus
+echo '\n yum finish install 02 plugin \n';
+sleep 3;
+echo '\n begin to install 03 plugin \n';
+git fetch
+echo '\n yum finish install 03 plugin \n';
+sleep 3;
+echo '\n begin to install 04 plugin \n';
+git branch master origin/master
+echo '\n yum finish install 04 plugin \n';
+sleep 3;
+echo '\n begin to install 05 plugin \n';
+git checkout master
+echo '\n yum finish install 05 plugin \n';
+sleep 3;
+echo '\n begin to install 06 plugin \n';
+cd libpcap-1.8.1
+echo '\n yum finish install 06 plugin \n';
+sleep 3;
+echo '\n begin to install 07 plugin \n';
+yum install git
+echo '\n yum finish install 07 plugin \n';
+sleep 3;
+echo '\n begin to install 08 plugin \n';
+git clone https://github.com/XiaohuaCN/Cloud-Radar-Plus
+
+echo '\n yum finish install 08 plugin \n';
+sleep 3;
+echo '\n begin to install 09 plugin \n';
+cd Cloud-Radar-Plus/
+echo '\n yum finish install 09 plugin \n';
+echo '\n begin to install 10 plugin \n';
+npm i
+echo '\n yum finish install 10 plugin \n';
+echo '\n begin to install 11 plugin \n';
+npm i -g pino
+echo '\n yum finish install 11 plugin \n';
+echo '\n begin to install 12 plugin \n';
+npm install -g forever
+echo '\n yum finish install 12 plugin \n';
+echo '\n begin to install 13 plugin \n';
+forever start index.js sniff eth0 172.31.214.36 | pino
+echo '\n yum finish install 13 plugin \n';
